@@ -6,16 +6,15 @@ html {
 body {
   /* display: flex; */
   align-items: center;
-
-  padding-bottom: 40px;
+  padding-bottom: 5%;
   background-color: #c1edff;
 }
 
 .form-signin {
   width: 100%;
-  max-width: 330px;
-  padding: 15px;
-  padding-top: 100px;
+  max-width: 50%;
+  padding: 5%;
+  padding-top: 12%;
   font-weight: 400;
   margin: auto;
 }
@@ -25,7 +24,7 @@ body {
 }
 
 .footer-padding {
-  padding-bottom: 60px;
+  padding-bottom: 5%;
 }
 
 .footer {
@@ -33,25 +32,25 @@ body {
   text-align: center;
   bottom: 0;
   width: 100%;
-  height: 60px;
+  height: 7%;
   background-color: #212c5c;
 }
 
 .footer p {
-  margin-top: 25px;
-  font-size: 14px;
+  margin-top: 1.25%;
+  font-size: 100%;
   color: rgb(255, 255, 255);
 }
 
 .navbar {
   display: block;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 1%;
+  padding-bottom: 0.5%;
   border: 0;
   border-radius: 0;
   margin-bottom: 0;
-  font-size: 18px;
-  letter-spacing: 5px;
+  font-size: 125%;
+  letter-spacing: 4px;
 }
 
 .navbar-nav li a:hover {
@@ -69,11 +68,11 @@ h1 {
 
 .styled-table {
   border-collapse: collapse;
-  margin: 25px 0;
+  margin: 3em 0;
   font-size: 0.9em;
   font-family: sans-serif;
-  min-width: 400px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  min-width: 3em;
+  box-shadow: 0 0 2em rgba(0, 0, 0, 0.15);
   border-radius: 100%;
   -moz-border-radius: 100%;
 }
@@ -86,7 +85,7 @@ h1 {
 
 .styled-table th,
 .styled-table td {
-  padding: 12px 15px;
+  padding: 0.6em 1em;
 }
 
 .styled-table tbody tr {
@@ -128,44 +127,104 @@ p {
 }
 
 .navbar-brand {
-  font-size: 28px;
+  font-size: 160%;
 }
 
 .textBox {
-  width: 500px;
-  height: 60px;
+  width: 100%;
+  height: 2.5em;
   font-size: x-large;
-  box-shadow: 6px 4px #cacaca;
+  box-shadow: 0.3em 0.2em #cacaca;
   text-align: center;
 }
+
+
 
 .pincode {
   font-family: "Poppins", sans-serif;
   font-size: 200%;
+  text-shadow: 0.08em 0.08em #808fa3cb;
   color: #fff;
-  
 }
 
 /*Bootstrap button outline override*/
 .btn-outline {
-    background-color: #c6ff91;
-    color: inherit;
-    transition: all .5s;
-    box-shadow: 6px 4px #cacaca;
+  background-color: #c6ff91;
+  color: inherit;
+  transition: all 0.5s;
+  box-shadow: 0.3em 0.2em #cacaca;
 }
-
-
 
 /* The transparent background image */
 .backgroundImg {
-  background-image:url('../images/vaccine.jpg');
+  background-image: url("../images/vaccine.jpg");
   opacity: 0.7;
-  position:absolute;
-  top:0;
-  bottom:0;
-  right:0;
-  left:0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index:-1;
+  z-index: -1;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .textBox {
+    font-size: medium;
+    width: 180%;
+  }
+  .footer p {
+    margin-top: 3%;
+  }
+  .footer {
+    height: 5%;
+  }
+
+  .styled-table {
+    border-collapse: collapse;
+    margin: 1em 0;
+    font-size: 0.4em;
+    font-family: sans-serif;
+    min-width: 3em;
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.15);
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+  }
+
+  .styled-table th,
+  .styled-table td {
+    padding: 0.3em 0.5em;
+  }
+  .navbar-brand {
+    font-size: 150%;
+  }
+
+  #centerName {
+    background-color: #e4f9ff;
+    font-family: "Poppins", sans-serif;
+    font-size: small;
+  }
+
+  h1 {
+    font-size: large;
+  }
+
+  .navbar {
+    font-size: 100%;
+  }
+
+  .backgroundImg {
+    background-image: url("../images/portrait.jpg");
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
 }
