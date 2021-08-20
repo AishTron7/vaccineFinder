@@ -1,4 +1,4 @@
-# vaccineFinder
+# Vaccine Slot Finder
 
 This website is built to provide a clean and easy to use interface for the average user. Just open the website, enter your pincode, hit submit, and BAM! you get neat tabular data to answer all your vaccine slot related queries. Searching for vaccine can't get simpler! 🤩
 
