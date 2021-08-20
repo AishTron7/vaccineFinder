@@ -1,0 +1,52 @@
+<%- include("partials/header"); -%>
+
+    <h1>Vaccination Data</h1>
+
+
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Vaccination Center</th>
+                <th>Date</th>
+                <th>Minimum Age Limit</th>
+                <th>Vaccine</th>
+                <th>Dose 1</th>
+                <th>Dose 2</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <% for (var i = 0; i < cowinData.centers.length; i++) { %>
+                <tr>
+                    <td rowspan="<%=cowinData.centers[i].sessions.length%>" id="centerName">
+                        <%= cowinData.centers[i].name %>
+                    </td>
+                   <% for (var j = 0; j < cowinData.centers[i].sessions.length; j++) { %>
+                    <td>
+                        <%= cowinData.centers[i].sessions[j].date %>
+                    </td>
+                    <td>
+                        <%= cowinData.centers[i].sessions[j].min_age_limit %>
+                    </td>
+                    <td>
+                        <%= cowinData.centers[i].sessions[j].vaccine %>
+                    </td>
+
+                    <td>
+                        <%= cowinData.centers[i].sessions[j].available_capacity_dose1 %>
+                    </td>
+
+                    <td>
+                        <%= cowinData.centers[i].sessions[j].available_capacity_dose2 %>
+                    </td>
+                    
+                </tr>
+                <% }} %>
+        </tbody>
+    </table>
+
+
+
+
+
+    <%- include("partials/footer"); -%>

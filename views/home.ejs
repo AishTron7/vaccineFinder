@@ -1,0 +1,22 @@
+<%- include("partials/header"); -%>
+
+
+
+    <main class="form-signin"><div class="backgroundImg"></div>
+        <form action="/" method="POST">
+            <br><br>
+
+            <!-- PINCODE -->
+            <label class="pincode" for="pinInput"> Pincode :  </label>
+            <div class="form-floating">
+                <input id="pinInput" type="text" name="pincode" class="form-control textBox" placeholder="Enter your area pincode here" pattern="[0-9]{1,6}" minlength="6" maxlength="6" required>
+            </div>
+            <br><br>
+            <button class="w-100 btn btn-lg btn-primary btn-outline" id="submit" type="submit">Submit</button>
+            
+        </form>
+        
+    </main>
+
+
+    <%- include("partials/footer"); -%>
