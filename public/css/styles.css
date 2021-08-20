@@ -134,7 +134,7 @@ p {
   width: 100%;
   height: 2.5em;
   font-size: x-large;
-  box-shadow: 0.3em 0.2em #cacaca;
+  box-shadow: 0.3em 0.2em #cacaca9d;
   text-align: center;
 }
 
@@ -143,7 +143,7 @@ p {
 .pincode {
   font-family: "Poppins", sans-serif;
   font-size: 200%;
-  text-shadow: 0.08em 0.08em #808fa3cb;
+  text-shadow: 0.08em 0.08em #000000cb;
   color: #fff;
 }
 
@@ -152,7 +152,7 @@ p {
   background-color: #c6ff91;
   color: inherit;
   transition: all 0.5s;
-  box-shadow: 0.3em 0.2em #cacaca;
+  box-shadow: 0.3em 0.2em #cacacaa2;
 }
 
 /* The transparent background image */
